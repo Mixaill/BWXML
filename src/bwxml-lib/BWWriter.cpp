@@ -149,8 +149,6 @@ namespace BWPack
 			throw std::runtime_error("Can't open the file");
 		mFile << outbuf.rdbuf();
 		mFile.close();
-
-		std::cout << "Success" << std::endl;
 	}
 
 	std::string BWXMLWriter::serializeSection(const ptree& node) const
